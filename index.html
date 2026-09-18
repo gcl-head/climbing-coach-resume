@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>高辰良 · 程序员 × 攀岩教练</title>
+<meta name="description" content="高辰良——程序员，攀岩指导员初级证书持有者，V2-V3攀爬水平，寻找周末/节假日攀岩教练兼职机会。" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="no-js">
+
+<!-- ============ Route Rail (desktop scroll progress) ============ -->
+<nav class="route-rail" aria-hidden="true">
+  <div class="route-rail__track">
+    <div class="route-rail__fill" data-rail-fill></div>
+  </div>
+  <ul class="route-rail__nodes">
+    <li class="route-rail__node" data-rail-node data-target="#certification"><span class="route-rail__dot"></span><span class="route-rail__label">01 证书</span></li>
+    <li class="route-rail__node" data-rail-node data-target="#climbing"><span class="route-rail__dot"></span><span class="route-rail__label">02 攀岩能力</span></li>
+    <li class="route-rail__node" data-rail-node data-target="#teaching"><span class="route-rail__dot"></span><span class="route-rail__label">03 教学特点</span></li>
+    <li class="route-rail__node" data-rail-node data-target="#about"><span class="route-rail__dot"></span><span class="route-rail__label">04 个人经历</span></li>
+  </ul>
+</nav>
+
+<!-- ============ Header ============ -->
+<header class="site-header" data-header>
+  <div class="container site-header__inner">
+    <a href="#hero" class="brand">高辰良 <span class="brand__sub">Chenliang Gao</span></a>
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="打开菜单">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" data-primary-nav>
+      <a href="#about" class="primary-nav__link">关于</a>
+      <a href="#certification" class="primary-nav__link">证书</a>
+      <a href="#climbing" class="primary-nav__link">攀岩能力</a>
+      <a href="#teaching" class="primary-nav__link">教学</a>
+      <a href="#log" class="primary-nav__link">攀岩记录</a>
+      <a href="#contact" class="btn btn--primary btn--sm">联系我</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ 01 HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__glow hero__glow--violet" data-parallax="0.02"></div>
+      <div class="hero__glow hero__glow--pink" data-parallax="0.04"></div>
+      <div class="hero__dotgrid" data-parallax="0.01"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="kicker" data-reveal>
+          <span class="kicker__dot"></span>OFF-DUTY CLIMBING COACH · SHANGHAI
+        </p>
+        <h1 class="hero__title">
+          <span class="reveal-line" data-reveal>高辰良</span>
+          <span class="reveal-line" data-reveal>攀岩教练求职简历</span>
+        </h1>
+        <p class="hero__subtitle" data-reveal>
+          用程序员的逻辑，拆解攀岩的每一个动作。
+        </p>
+
+        <div class="hero__meta" data-reveal>
+          <span class="tag">V2–V3 稳定 · 挑战 V4</span>
+          <span class="tag">攀岩指导员初级证书</span>
+          <span class="tag">周末 / 节假日可授课</span>
+        </div>
+
+        <div class="hero__actions" data-reveal>
+          <a href="#about" class="btn btn--primary">
+            <span>了解更多</span>
+            <span class="btn__icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+          <a href="#contact" class="btn btn--secondary">联系我</a>
+        </div>
+      </div>
+
+      <div class="hero__route" data-reveal>
+        <svg class="route-svg" viewBox="0 0 220 460" fill="none" aria-hidden="true">
+          <path class="route-svg__path" data-route-path d="M110 450 C 40 400, 180 360, 110 300 C 40 240, 180 200, 110 140 C 40 90, 150 60, 110 10"
+            stroke="url(#routeGrad)" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <defs>
+            <linearGradient id="routeGrad" x1="0" y1="460" x2="0" y2="0">
+              <stop offset="0%" stop-color="#8B5CF6"/>
+              <stop offset="45%" stop-color="#F472B6"/>
+              <stop offset="75%" stop-color="#FBBF24"/>
+              <stop offset="100%" stop-color="#34D399"/>
+            </linearGradient>
+          </defs>
+          <g class="route-svg__nodes">
+            <circle cx="110" cy="450" r="7"/>
+            <circle cx="110" cy="300" r="7"/>
+            <circle cx="110" cy="140" r="7"/>
+            <circle cx="110" cy="10" r="7"/>
+          </g>
+        </svg>
+        <div class="route-scale" aria-hidden="true">
+          <span>V4</span><span>V3</span><span>V2</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scrollcue" data-reveal aria-hidden="true">
+      <span>SCROLL</span>
+      <div class="hero__scrollline"></div>
+    </div>
+  </section>
+
+  <!-- ============ 02 ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container section__grid section__grid--photo-right">
+      <div class="section__photo" data-reveal>
+        <figure class="sticker-card sticker-card--rotate-l">
+          <img src="assets/images/portrait.jpg" alt="高辰良在服装店内的生活照，攀岩之外的日常状态" loading="lazy" width="1350" height="1800">
+        </figure>
+        <div class="tag-float tag-float--tl">ROUTE / 04</div>
+        <div class="tag-float tag-float--br">STYLE / PROFILE</div>
+      </div>
+
+      <div class="section__text">
+        <p class="section__kicker" data-reveal>02 / ABOUT</p>
+        <h2 class="section__title" data-reveal>不只是程序员，<br>也不只是攀岩爱好者。</h2>
+        <p class="section__body" data-reveal>
+          主职是一名程序员，日常工作中比较习惯将相对模糊的需求逐步梳理，拆解成清晰的逻辑和步骤。业余时间保持攀岩训练，也希望在持续学习和实践的过程中不断提升自己，近期考取了攀岩指导员初级证书。
+        </p>
+        <p class="section__body" data-reveal>
+          性格相对内敛，不太擅长场面话。不过在面对具体的内容时，比如分析一条线路、拆解一个动作，反而会比较专注，也能够比较自然地进行讲解。我比较喜欢这种安静观察、认真分析，再把自己理解的东西尽量清楚地表达出来的方式。
+        </p>
+        <p class="section__body" data-reveal>
+          目前还在积累攀岩和教学方面的经验，也希望有机会在实际教学中继续学习和进步。
+        </p>
+        <ul class="fact-list" data-reveal>
+          <li><span class="fact-list__label">主职</span><span class="fact-list__value">软件工程师</span></li>
+          <li><span class="fact-list__label">资质</span><span class="fact-list__value">攀岩指导员初级证书</span></li>
+          <li><span class="fact-list__label">可授课时间</span><span class="fact-list__value">周末 / 法定节假日</span></li>
+          <li><span class="fact-list__label">城市</span><span class="fact-list__value">上海</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 CERTIFICATION ============ -->
+  <section class="section section--alt" id="certification">
+    <div class="container section__grid section__grid--photo-left">
+      <div class="section__photo" data-reveal>
+        <figure class="sticker-card sticker-card--rotate-r sticker-card--shadow-pink">
+          <img src="assets/images/looking-at-gym.jpg" alt="推开岩馆大门，准备训练" loading="lazy" width="1350" height="1800">
+        </figure>
+        <div class="tag-float tag-float--tr">GRADE / CERT</div>
+      </div>
+
+      <div class="section__text">
+        <p class="section__kicker" data-reveal>03 / CERTIFICATION</p>
+        <h2 class="section__title" data-reveal>攀岩指导员<br>初级证书</h2>
+        <p class="section__body" data-reveal>
+          系统学习攀岩基础理论、安全规范及初级教学知识，了解顶绳保护、抱石保护、安全带使用、基础手法脚法、三点平衡、保护站建设等内容，可进行相关基础知识与动作的讲解。
+        </p>
+        <div class="badge-row" data-reveal>
+          <span class="tag tag--outline">ROUTE / 01</span>
+          <span class="tag tag--outline">GRADE / CERT</span>
+          <span class="tag tag--outline">STYLE / SAFETY</span>
+        </div>
+        <div class="cert-card" data-reveal>
+          <div class="cert-card__seal" aria-hidden="true">
+            <svg viewBox="0 0 100 100" width="56" height="56">
+              <circle cx="50" cy="50" r="46" fill="none" stroke="#FBBF24" stroke-width="3" stroke-dasharray="6 5"/>
+              <circle cx="50" cy="50" r="34" fill="none" stroke="#F3EFE6" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="cert-card__text">
+            <strong>攀岩指导员（初级）</strong>
+            <span>基础安全监督 · 保护意识 · 入门动作讲解</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 CLIMBING ============ -->
+  <section class="section" id="climbing">
+    <div class="container section__grid section__grid--photo-right">
+      <div class="section__photo" data-reveal>
+        <figure class="sticker-card sticker-card--rotate-l sticker-card--wingspan">
+          <img src="assets/images/wingspan.jpg" alt="攀岩馆内，长臂展横向移动动作" loading="lazy" width="1350" height="1800">
+          <span class="wingspan-callout" aria-label="臂展190厘米">
+            <span class="wingspan-callout__text">臂展 190cm</span>
+            <span class="wingspan-callout__line" aria-hidden="true"></span>
+          </span>
+        </figure>
+      </div>
+
+      <div class="section__text">
+        <p class="section__kicker" data-reveal>04 / CLIMBING</p>
+        <h2 class="section__title" data-reveal>V2–V3 稳定完成<br>V4 持续挑战中</h2>
+        <p class="section__body" data-reveal>
+          日常训练以 V2–V3 为主，动作稳定、完成率高；部分较软的 V4 线路偶尔可以完成，仍在持续进步。不夸大水平，但足以理解和拆解新手阶段的核心动作。
+        </p>
+
+        <ol class="grade-ladder" data-reveal>
+          <li class="grade-ladder__item is-filled">
+            <span class="grade-ladder__dot" data-dot></span>
+            <span class="grade-ladder__grade">V2</span>
+            <span class="grade-ladder__note">稳定完成</span>
+          </li>
+          <li class="grade-ladder__item is-filled">
+            <span class="grade-ladder__dot" data-dot></span>
+            <span class="grade-ladder__grade">V3</span>
+            <span class="grade-ladder__note">稳定完成</span>
+          </li>
+          <li class="grade-ladder__item is-open">
+            <span class="grade-ladder__dot" data-dot></span>
+            <span class="grade-ladder__grade">V4</span>
+            <span class="grade-ladder__note">偶尔挑战 · 持续提升中</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 TEACHING ============ -->
+  <section class="section section--alt" id="teaching">
+    <div class="container">
+      <p class="section__kicker section__kicker--center" data-reveal>05 / TEACHING</p>
+      <h2 class="section__title section__title--center" data-reveal>把复杂的动作，<br>拆解成清楚的步骤。</h2>
+      <p class="section__body section__body--center" data-reveal>
+        擅长把模糊的感觉转译成结构化的语言——这是写代码训练出的习惯，也是我教学的核心方法。
+      </p>
+
+      <div class="chip-row" data-reveal>
+        <span class="chip">结构化</span>
+        <span class="chip">耐心</span>
+        <span class="chip">动作拆解</span>
+        <span class="chip">清晰表达</span>
+      </div>
+
+      <ol class="process-flow" data-reveal>
+        <li class="process-flow__step">
+          <span class="process-flow__index">01</span>
+          <span class="process-flow__label">观察</span>
+          <p class="process-flow__desc">先看学员怎么爬，不急于纠正。</p>
+        </li>
+        <li class="process-flow__step">
+          <span class="process-flow__index">02</span>
+          <span class="process-flow__label">分析</span>
+          <p class="process-flow__desc">找到卡点：是重心、是发力，还是路线读法。</p>
+        </li>
+        <li class="process-flow__step">
+          <span class="process-flow__index">03</span>
+          <span class="process-flow__label">拆解</span>
+          <p class="process-flow__desc">把一个动作拆成可执行的几个小步骤。</p>
+        </li>
+        <li class="process-flow__step">
+          <span class="process-flow__index">04</span>
+          <span class="process-flow__label">练习</span>
+          <p class="process-flow__desc">针对性重复，而不是盲目多爬。</p>
+        </li>
+        <li class="process-flow__step">
+          <span class="process-flow__index">05</span>
+          <span class="process-flow__label">反馈</span>
+          <p class="process-flow__desc">明确指出进步和下一步该练什么。</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 06 CLIMBING LOG ============ -->
+  <section class="section section--alt" id="log">
+    <div class="container">
+      <p class="section__kicker" data-reveal>06 / CLIMBING LOG</p>
+      <h2 class="section__title" data-reveal>Climbing Log</h2>
+      <p class="section__body" data-reveal>不定期在小红书记录攀岩训练片段与路线细节。</p>
+
+      <div class="log-grid log-grid--no-video" data-reveal>
+        <div class="log-side">
+          <div class="rxbook-card">
+            <div class="rxbook-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M8 12h8M8 16h5M8 8h3"/></svg>
+            </div>
+            <div class="rxbook-card__text">
+              <strong>小红书</strong>
+              <span>9503083076</span>
+              <p>不定期更新攀岩训练与线路记录</p>
+            </div>
+          </div>
+
+          <figure class="sticker-card sticker-card--rotate-r sticker-card--shadow-amber log-side__photo">
+            <img src="assets/images/climbing-action.jpg" alt="更多攀岩片段持续更新" loading="lazy" width="1350" height="1800">
+            <figcaption>MORE CLIPS · COMING SOON</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 07 CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="container contact__inner">
+      <p class="section__kicker section__kicker--center" data-reveal>07 / CONTACT</p>
+      <h2 class="section__title section__title--center" data-reveal>找一位<br>周末 / 节假日攀岩教练？</h2>
+      <p class="section__body section__body--center" data-reveal>
+        性格沉稳、讲解清晰，带着程序员式的较真态度对待每一个教学细节。目前在上海，希望利用周末与法定节假日承接攀岩教学工作。
+      </p>
+
+      <div class="contact-grid" data-reveal>
+        <a class="contact-card" href="tel:15618160778">
+          <span class="contact-card__label">手机</span>
+          <span class="contact-card__value">156 1816 0778</span>
+        </a>
+        <a class="contact-card" href="mailto:1132067974@qq.com">
+          <span class="contact-card__label">邮箱</span>
+          <span class="contact-card__value">1132067974@qq.com</span>
+        </a>
+        <div class="contact-card contact-card--static">
+          <span class="contact-card__label">微信</span>
+          <span class="contact-card__value">GL1132067974</span>
+        </div>
+        <div class="contact-card contact-card--static">
+          <span class="contact-card__label">城市</span>
+          <span class="contact-card__value">上海</span>
+        </div>
+      </div>
+
+      <a href="mailto:1132067974@qq.com" class="btn btn--primary btn--lg" data-reveal>
+        <span>发起联系</span>
+        <span class="btn__icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span>© <span data-year>2026</span> 高辰良</span>
+      <span>Programmer × Climbing Coach</span>
+    </div>
+  </footer>
+
+</main>
+
+<script src="js/nav.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/route-rail.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

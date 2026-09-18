@@ -1,0 +1,184 @@
+/* ==========================================================================
+   Base — reset, design tokens, typography
+   ========================================================================== */
+
+:root {
+  /* Palette — Rock Grey / Editorial Dark, punctuated by Playful Geometric pops */
+  --color-bg: #0C0D0F;
+  --color-bg-elevated: #16181B;
+  --color-bg-card: #1B1D21;
+  --color-fg: #F3EFE6;
+  --color-fg-muted: #9BA3AD;
+  --color-border: rgba(243, 239, 230, 0.14);
+  --color-border-strong: rgba(243, 239, 230, 0.88);
+
+  --color-accent: #8B5CF6;
+  --color-accent-fg: #FFFFFF;
+  --color-secondary: #F472B6;
+  --color-tertiary: #FBBF24;
+  --color-quaternary: #34D399;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  --border-width: 2px;
+
+  --shadow-hard: 4px 4px 0 var(--color-border-strong);
+  --shadow-hard-hover: 6px 6px 0 var(--color-border-strong);
+  --shadow-hard-active: 2px 2px 0 var(--color-border-strong);
+
+  --font-heading: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --container-width: 1140px;
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.3s;
+  --dur-base: 0.6s;
+  --dur-slow: 1s;
+}
+
+* , *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img, video { max-width: 100%; display: block; }
+
+a { color: inherit; text-decoration: none; }
+
+ul, ol { margin: 0; padding: 0; list-style: none; }
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+p { margin: 0; }
+
+button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+@media (min-width: 900px) {
+  .container { padding-inline: 40px; }
+}
+
+/* Kicker / eyebrow label */
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+}
+.kicker__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-tertiary);
+  box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.18);
+}
+
+.section__kicker {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 14px;
+}
+.section__kicker--center { text-align: center; }
+
+.section__title {
+  font-size: clamp(1.9rem, 1.4rem + 2.2vw, 3rem);
+  font-weight: 800;
+  color: var(--color-fg);
+  margin-bottom: 20px;
+}
+.section__title--center { text-align: center; margin-inline: auto; }
+
+.section__body {
+  font-size: 1.03rem;
+  color: var(--color-fg-muted);
+  max-width: 52ch;
+  margin-bottom: 16px;
+}
+.section__body--center { text-align: center; margin-inline: auto; max-width: 62ch; }
+
+/* Tags / chips shared visual language */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  border: var(--border-width) solid var(--color-border-strong);
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--color-fg);
+  background: var(--color-bg-elevated);
+}
+.tag--outline {
+  background: transparent;
+  color: var(--color-fg-muted);
+  border-color: var(--color-border);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.chip {
+  display: inline-flex;
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+/* Accessible focus ring — thick + high contrast, matches design system */
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.no-js [data-reveal] { opacity: 1 !important; transform: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
